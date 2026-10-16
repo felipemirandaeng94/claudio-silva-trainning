@@ -1,0 +1,45 @@
+SITE ESTÁTICO — FELIPE MIRANDA TREINOS (DEMONSTRAÇÃO)
+=================================================
+
+1. COMO VISUALIZAR
+   Abra o arquivo index.html no Chrome, Edge ou Firefox.
+   O site funciona sem internet. Todas as fotos estão na pasta assets/.
+
+2. COMO PERSONALIZAR PARA UM NOVO CLIENTE
+   Abra index.html em um editor de texto (ex.: VS Code).
+   Vá ao final do arquivo, no bloco <script>, e altere:
+   - CONFIG: nome, cidade, fotoCapa e dataReferencia;
+   - TREINOS: registre cada atividade do atleta (data, tipo, km, ritmo etc.);
+   - PODIOS: insira conquistas reais;
+   - ROTAS: insira lugares favoritos do atleta.
+   Para trocar a foto principal, substitua assets/capa.webp por uma foto
+   do atleta (ou ajuste o caminho CONFIG.fotoCapa para .jpg/.png/.webp).
+   Para personalizar fotos dos treinos, troque os arquivos na pasta
+   assets/ ou altere o campo foto de cada atividade.
+
+   IMPORTANTE: ritmo é dado em SEGUNDOS POR QUILÔMETRO.
+   Exemplo: 5min48s/km = 5*60+48 = 348.
+   Para musculação, use esporte:'forca', km:0 e tempo em segundos.
+   A tela Evolução e os resumos são calculados pelos dados registrados.
+   Para atualizar os filtros de período, altere a dataReferencia para a
+   data mais recente que desejar considerar.
+
+3. COMO PUBLICAR NA HOSTINGER
+   Envie index.html e a pasta assets/ para a pasta public_html do domínio
+   ou subdomínio escolhido, mantendo os nomes originais.
+   Não é preciso servidor Node, PHP, Python, banco de dados ou login.
+
+4. PRIVACIDADE E DADOS
+   Este modelo é 100% estático: não envia dados para um servidor, não
+   usa cookies de rastreamento nem coleta dados do visitante.
+   Se publicar informações de um atleta real, obtenha a autorização
+   dele para divulgar fotos, locais e histórico dos treinos.
+
+5. LIMITAÇÕES
+   Dados e resultados são fictícios. Os mapas são desenhos ilustrativos,
+   não traçados reais por ruas. O botão "Ver local no mapa" abre somente
+   uma pesquisa do lugar no Google Maps, não a rota do treino.
+   Compartilhamento funciona plenamente após a publicação HTTPS; ao abrir
+   como arquivo local pode ser limitado pelas permissões do navegador.
+
+FEITO COMO TEMPLATE REUTILIZÁVEL — HTML, CSS e JavaScript puro.
